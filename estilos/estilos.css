@@ -13,11 +13,11 @@ html {
 
 nav {
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   margin: 1rem auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   font-size: 1.6rem;
   color: #fff;
 }
@@ -93,14 +93,15 @@ main .imagen div p {
 main .principal {
   width: 90%;
   margin: 0 auto;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   font-weight: 300;
 }
 main .principal .sobre-mi {
-  margin-top: 1.6rem;
+  margin-top: 0.6rem;
   border-top: 0.2rem #2c4d5c solid;
   width: 100%;
-  height: auto;
+  height: 70rem;
+  margin-top: 2rem;
 }
 main .principal .sobre-mi h2 {
   text-transform: uppercase;
@@ -122,20 +123,21 @@ main .principal .yo__primera {
 main .principal .yo__primera img {
   border-radius: 2rem;
   width: 80%;
-  height: 60rem;
+  height: 55rem;
   object-fit: center;
 }
 main .principal .yo__segunda {
+  position: relative;
   width: 60%;
 }
 main .principal .yo__segunda p {
-  margin: 0.6rem 0;
+  margin: 0.4rem 0;
 }
 main .principal .yo__segunda ul {
-  margin: 0.6rem 3rem;
+  margin: 0.4rem 3rem;
 }
 main .principal .yo__segunda ul ul {
-  margin: 0.6rem 3rem;
+  margin: 0.4rem 3rem;
 }
 
 .desarrollo-web {
@@ -205,6 +207,41 @@ main .principal .yo__segunda ul ul {
   margin: 1rem 0;
   text-align: justify;
   font-size: 1.2rem;
+}
+
+.inicio {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+}
+.inicio .fas {
+  font-size: 5rem;
+  border-radius: 2rem;
+  color: #2c4d5c;
+  padding: 1rem;
+}
+.inicio .fas:hover {
+  background-color: #2c4d5c;
+  color: #fff;
+}
+
+.inicio2 {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inicio2 i {
+  font-size: 5rem;
+  color: #2c4d5c;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.inicio2 i:hover {
+  background-color: #2c4d5c;
+  color: #fff;
 }
 
 /*# sourceMappingURL=estilos.css.map */

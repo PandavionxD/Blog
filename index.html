@@ -7,17 +7,19 @@
     <meta name="description" content="Esta pagina web es un blog donde detalloo diferentes cosas tecnologias = hadware y software, tecnologias libres.">
     <link rel="stylesheet" href="estilos/estilos.css">
     <link rel="shortcut icon" href="img/icons8-panda-30.png" type="image/x-icon">
+    <!-- Iconos de Font awesome-->
+    <script src="https://kit.fontawesome.com/1aba9b6160.js" crossorigin="anonymous"></script>
     <title>Website!</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="nav-logo">
                 <h1>MiBLoG </h1>
             </div>
             <div class="nav--navegacion">
                 <ul class="nav--1">
-                    <li> <a href="#principal">Inicio</a></li>
+                    <li> <a href="#principal" >Inicio</a></li>
                     <li><a href="#sobre_mi">Sobre mi</a></li>
                     <li> <a href="#dweb">Desarrollo Web</a></li>
                     <li> <a href="#">Linux</a></li>
@@ -76,13 +78,25 @@
                             <li>Hacer algo por mi Ciudad!!</li>
                         </ul>
                     </ul>
+                    <div class="inicio">
+                        <a href="#header">
+                            <!-- <img src="img/house.svg" alt="house"> -->
+                                <i class="fas fa-home"></i>
+                        </a>
+                    </div>
                 </div>
+                
         </div>
            
         </section>
         <section class="desarrollo-web" id="dweb">
             <h2>Desarrollo Web</h2>
-            <p>Aqui algunos cursos que lleve por si les interesa en lo que respecta al desarrollo Web.</p> 
+            <p>Aqui algunos cursos que lleve por si les interesa en lo que respecta al desarrollo Web, les dejo el acceso a mis repositorios.</p> 
+            <div class="inicio2">
+                <a href="#header">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
             <div class="contain-dw">
                 <div class="card">
                     <h1>HTML y CSS</h1>
@@ -150,8 +164,8 @@
                     <p>Un preprocesador CSS es una herramienta que nos permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS, y que son propias de los lenguajes de programación, como pueden ser variables, funciones, selectores anidados, herencia, etc.</p>
                     <button><a href="#">Ver más</a></button>
                 </div>
-                
             </div>
+                
         </section>
     </section>    
     </main>
