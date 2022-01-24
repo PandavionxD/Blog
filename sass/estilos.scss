@@ -2,24 +2,34 @@
 @import "variables";
 
 nav{
-    width: 90%;
-    height: 4.5rem;
+    width: 100%;
+    height: 4.2rem;
     margin: 1.2rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: $text-md;
+    .nav-logo{
+        margin-left: 1.2rem;
+    }
     ul{
         li{
             list-style: none;
             display: inline-block;
-            margin: 0 1.2rem;
+            margin-right: 1.2rem;
             a{
-                padding: .8rem;
+                padding: 1.4rem 1rem;
                 text-decoration: none;
                 color:$black;
                 font-weight: 500;
                 cursor: pointer;
+                border-radius: 2rem;
+            }
+            a:hover{
+                transition: .6s;
+                background-color:$secundario;
+                color:$white;
+                border-radius: 2rem;
             }
         }
 
@@ -117,6 +127,7 @@ main{
     height: 100vh;
     margin-top: 5rem;
     font-size: $text-md;
+    
     h2{
         text-transform: uppercase;
         font-size: 3rem;
@@ -138,7 +149,7 @@ main{
         gap: 1.6rem;
         .card{
             border: 2px solid $primario;
-            height: 30rem;
+            height: 35rem;
             border-radius: 2rem;
             padding:2rem;
             display: flex;

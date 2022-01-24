@@ -3,3 +3,5 @@ let msj1 = "Paciencia porfavor =)"
 
 alert(advertencia)
 alert(msj1)
+
+
