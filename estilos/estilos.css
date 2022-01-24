@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  width: 90%;
+  height: 4.5rem;
+  margin: 1.2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1.2rem;
+}
+nav ul li a {
+  padding: 0.8rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+main .imagen {
+  width: 100%;
+  height: 55rem;
+  color: #fff;
+  background-image: url(../img/385439.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .imagen div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .imagen div h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+}
+main .imagen div h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+main .imagen div p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-align: center;
+}
+main .principal {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+main .principal .sobre-mi {
+  margin-top: 1.6rem;
+  border-top: 0.2rem #2c4d5c solid;
+  width: 100%;
+  height: auto;
+  letter-spacing: 0.1rem;
+}
+main .principal .sobre-mi h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 0.2rem #2c4d5c solid;
+  padding-bottom: 1.4rem;
+}
+main .principal .container-yo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+main .principal .yo__primera {
+  height: 30rem;
+  width: 40%;
+}
+main .principal .yo__primera img {
+  border-radius: 2rem;
+  width: 80%;
+  height: 60rem;
+  object-fit: center;
+}
+main .principal .yo__segunda {
+  width: 60%;
+}
+main .principal .yo__segunda p {
+  margin: 0.6rem 0;
+}
+main .principal .yo__segunda ul {
+  margin: 0.6rem 3rem;
+}
+main .principal .yo__segunda ul ul {
+  margin: 0.6rem 3rem;
+}
+
+.desarrollo-web {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  font-size: 1.6rem;
+}
+.desarrollo-web h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 0.2rem rgba(0, 0, 255, 0.699) solid;
+  border-top: 0.2rem rgba(0, 0, 255, 0.699) solid;
+  padding: 1.4rem 0;
+}
+.desarrollo-web p {
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+.desarrollo-web .contain-dw {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.desarrollo-web .contain-dw .card {
+  border: 2px solid rgba(0, 0, 255, 0.699);
+  height: 30rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.desarrollo-web .contain-dw .card h1 {
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem 0;
+}
+.desarrollo-web .contain-dw .card button {
+  width: 10rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  background-color: rgba(0, 0, 255, 0.699);
+  cursor: pointer;
+}
+.desarrollo-web .contain-dw .card button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.desarrollo-web .contain-dw .card div {
+  width: 10rem;
+  height: auto;
+}
+.desarrollo-web .contain-dw .card div img {
+  object-fit: contain;
+  width: 100%;
+}
+.desarrollo-web .contain-dw .card p {
+  margin: 1rem 0;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */
