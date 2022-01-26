@@ -163,8 +163,9 @@ main .principal .yo__segunda ul ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, 350px);
   justify-content: center;
-  align-items: center;
+  place-items: center;
   gap: 1.6rem;
+  padding-bottom: 2rem;
 }
 .desarrollo-web .contain-dw .card {
   border: 2px solid rgba(0, 0, 255, 0.699);
@@ -183,17 +184,26 @@ main .principal .yo__segunda ul ul {
 }
 .desarrollo-web .contain-dw .card button {
   width: 10rem;
-  border: none;
+  border: 0.1rem solid rgba(0, 0, 255, 0.699);
   border-radius: 2rem;
   padding: 0.8rem;
-  background-color: rgba(0, 0, 255, 0.699);
+  background-color: #fff;
+  margin-top: 1rem;
   cursor: pointer;
 }
 .desarrollo-web .contain-dw .card button a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(0, 0, 255, 0.699);
   font-weight: 500;
   font-size: 1.6rem;
+}
+.desarrollo-web .contain-dw .card button:hover {
+  border: 0.1rem solid rgba(0, 0, 255, 0.699);
+  background-color: rgba(0, 0, 255, 0.699);
+  transition: 0.6s;
+}
+.desarrollo-web .contain-dw .card button:hover a {
+  color: #fff;
 }
 .desarrollo-web .contain-dw .card div {
   width: 10rem;

@@ -1,0 +1,26 @@
+
+@mixin botones {
+                width: 10rem;
+                border: .1rem solid $primario;
+                border-radius: 2rem;
+                padding: .8rem;
+                background-color: $white;
+                margin-top:1rem;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $primario;
+                    font-weight: 500;
+                    font-size: $text-md;
+                }
+};
+
+
+@mixin botonHover {
+    border: .1rem solid $primario;
+    background-color:$primario;
+    transition: .6s;
+    a{
+        color:$white;
+    }
+}
