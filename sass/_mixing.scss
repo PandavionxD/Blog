@@ -24,3 +24,22 @@
         color:$white;
     }
 }
+
+@mixin subTitutlos ($color-borde) {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        margin: 2rem 0;
+        border-bottom:.2rem $color-borde solid;
+        border-top:.2rem $color-borde solid;
+        padding:1.4rem 0;
+    
+}
+
+@mixin box($color){
+    border-radius: 0.6rem;
+    border: .2rem solid $color;
+    text-align: justify;
+    font-size: $text-md;
+    padding: 1rem 2rem;
+}
