@@ -1,4 +1,4 @@
-let advertencia = "Esto recien se esta elaborando, a medida que tengo tiempo lo estoy realizando prometo terminarlo pronto!!!  =)"
+let advertencia = "Poco a poco avanzando =) falta el diseño responsive y algunos enlaces!"
 let msj1 = "Paciencia porfavor =) =) "
 
 alert(advertencia)
