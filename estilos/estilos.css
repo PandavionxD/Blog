@@ -73,6 +73,10 @@ nav ul li a:hover {
   border-radius: 2rem;
 }
 
+.container-menu {
+  display: none;
+}
+
 .menu {
   color: #2c4d5c;
   font-size: 2.5rem;

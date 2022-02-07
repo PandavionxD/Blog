@@ -64,8 +64,10 @@ nav{
 
     }
 }
+.container-menu{
+    display: none;
+}
 .menu{
-    // display: none;
     color:$secundario;
     font-size: 2.5rem;
     cursor: pointer;
