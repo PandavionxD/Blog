@@ -27,11 +27,24 @@ nav{
         
     }
     .nav--navegacion{
+        display: flex;
+        margin-right: 1rem;
+    }
+    .active{
+        background-color:$secundario;    
+        border-radius: 2rem;
+        padding: 1.4rem 1rem;
+                a{
+                    color:$white;
+                    font-weight: 500;
+                    font-size: $text-lg;
+                }
     }
     ul{
+        display: flex;
+        align-items: center;
         li{
             list-style: none;
-            display: inline-block;
             margin-right: 1.2rem;
             a{
                 padding: 1.4rem 1rem;
@@ -50,6 +63,11 @@ nav{
         }
 
     }
+}
+.menu{
+    display: none;
+    color:$secundario;
+    font-size: 2.5rem;
 }
 main{
     width: 100%;
@@ -334,6 +352,9 @@ main{
         display: flex;
         justify-content: center;
         .box{
+            ul{
+                margin-top: 1.5rem;
+            }
             width: 50%;
             @include box (RGB(40, 162, 220));
             margin: 0 1.8rem 2rem;
@@ -345,6 +366,7 @@ main{
     
 }
 .virtualizadores{
+    margin-top: 1.5rem;
    display: flex;
    justify-content: space-evenly;
    .v1,.v2{
