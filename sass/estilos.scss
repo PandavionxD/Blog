@@ -65,9 +65,10 @@ nav{
     }
 }
 .menu{
-    display: none;
+    // display: none;
     color:$secundario;
     font-size: 2.5rem;
+    cursor: pointer;
 }
 main{
     width: 100%;

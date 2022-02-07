@@ -74,9 +74,9 @@ nav ul li a:hover {
 }
 
 .menu {
-  display: none;
   color: #2c4d5c;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
 main {
