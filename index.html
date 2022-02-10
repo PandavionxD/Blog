@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Esta pagina web es un blog donde detalloo diferentes cosas tecnologias = hadware y software, tecnologias libres.">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="shortcut icon" href="img/icons8-panda-30.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta pagina web es un blog donde detalloo diferentes cosas tecnologias = hadware y software, tecnologias libres."
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link
+      rel="shortcut icon"
+      href="img/icons8-panda-30.png"
+      type="image/x-icon"
+    />
     <!-- Iconos de Font awesome-->
     <script src="https://kit.fontawesome.com/1aba9b6160.js" crossorigin="anonymous"></script>
     <title>Website!</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- SECCION HEADER -->
     <header id="header">
-        <nav>
-            <div class="nav-logo">
-                <h1>MiBLoG </h1>
-            </div>
-            <div class="nav--navegacion">
-                <ul class="nav--1">
-                    <li class="active"> <a href="#principal">Inicio</a></li>
-                    <li><a href="#sobre_mi">Sobre mi</a></li>
-                    <li> <a href="#dweb">Desarrollo Web</a></li>
-                    <li> <a href="#linux">Linux</a></li>
-                    <li> <a href="#contacto">Contacto</a></li>
-                </ul>
-                <div class="container-menu"> 
-                    <i class="fas fa-bars menu"></i>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <h1>MyWebSite!</h1>
+        </div>
+          <ul class="menu-nav">
+            <li><a href="#principal">Inicio</a></li>
+            <li><a href="#sobre_mi">Sobre mi</a></li>
+            <li><a href="#dweb">Desarrollo Web</a></li>
+            <li><a href="#linux">Linux</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        
+        <div class="menu-bar">
+          <i class="fas fa-bars menu"></i>
+        </div>
+      </nav>
     </header>
+    <!-- FIN SECCION CABECERA -->
+
+    <!-- SECCION PRINCIPAL -->
     <main>
+        <!-- SECCION HERO -->
         <section class="imagen" id="principal">
             <div class="imagen-1">
-                <h1>Bienvenido a mi Blog </h1>
+                <h1>Bienvenido a mi Website </h1>
                 <h3>En este blog subire cosas que me gustan ya sea desarrollo, cursos, novedades, linux <3, animes,etc.
                         </h3>
                         <p>Espero se diviertan!! =)</p>
             </div>
         </section>
+        <!-- FIN SECCION HERO -->
+
+        <!-- SECCION SOBRE MI -->
         <section class="principal" id="sobre_mi">
             <section class="sobre-mi">
-                <h2>sobre mí!!</h2>
-                <div class="container-yo">
-                    <div class="yo__primera">
-                        <img src="img/polar.jpg" alt="">
-                    </div>
-                    <div class="yo__segunda">
-                        <p>Que tal me llamo Alex Daniel Artica Rivera vivo actualmente en Huancayo, Junin, Perú. soy
-                            estudiante de SENATI, me apasiona la tecnología. </p>
-                        <p>Sobre mí:</p>
-                        <ul>
+                
+                <h2><i class="fas fa-user"></i>sobre mí!! <span><a href="#header">
+                    <i class="fas fa-home home"></i>
+                </a></span> </h2>
+                <div class="parrafo-yo">                    
+                    <p>Que tal me llamo Alex Daniel Artica Rivera vivo actualmente en Huancayo, Junin, Perú. soy
+                        estudiante de SENATI, de la carrera de informatica y me apasiona la tecnología. </p>
+                    <div class="container-yo">
+
+                        <div class="yo__segunda">
+                            <p>Un poco de mí</p>
+                            <ul>
                             <li>Me encanta las tecnologías.</li>
                             <li>Ventas y atencion al cliente.</li>
                             <li>Armado de computadoras me apasiona el mundo del Hadware</li>
                             <li>Desarrollo Web</li>
-                            <ul>
+                            <ul class="submenu-1">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -69,7 +83,7 @@
                                 <li>Angular -> Aprendiendo =)</li>
                             </ul>
                             <li>Me gusta el Open Source -> GNU/linux</li>
-                            <ul>
+                            <ul class="submenu-1">
                                 <li>Fedora -> (perfecta)</li>
                                 <li>Debian</li>
                                 <li>Elementary</li>
@@ -78,7 +92,7 @@
                                 <li>etc</li>
                             </ul>
                             <li>Metas</li>
-                            <ul>
+                            <ul class="submenu-1">
                                 <li>Ser cada día mejor</li>
                                 <li>Seguir aprendiendo más y nunca dejar de aprender</li>
                                 <li>Nunca conformarme</li>
@@ -86,31 +100,29 @@
                                 <li>Hacer algo por mi Ciudad!!</li>
                             </ul>
                         </ul>
-                        <div class="inicio">
-                            <a href="#header">
-                                <!-- <img src="img/house.svg" alt="house"> -->
-                                <i class="fas fa-home"></i>
-                            </a>
-                        </div>
                     </div>
-
+                    <div class="yo__primera">
+                        <img src="img/img/polar.jpg" alt="Polar">
+                    </div>
+                </div>
                 </div>
 
             </section>
+            <!-- SECCION DESARROLLO WEB -->
             <section class="desarrollo-web" id="dweb">
-                <h2>Desarrollo Web</h2>
+                <h2><i class="fas fa-pen"></i>Desarrollo Web</h2>
+                <div class="inicio3">
+                <a href="#header">
+                    <i class="fas fa-home home"></i>
+                </a>
+                 </div>
                 <p>Aqui algunos cursos que lleve por si les interesa en lo que respecta al desarrollo Web, les dejo el
                     acceso a mis repositorios.</p>
-                <div class="inicio2">
-                    <a href="#header">
-                        <i class="fas fa-home"></i>
-                    </a>
-                </div>
                 <div class="contain-dw">
                     <div class="card">
                         <h1>HTML y CSS</h1>
                         <div>
-                            <img src="img/html y css.png" alt="HTML y CSS">
+                            <img src="img/d-web/html y css.png" alt="HTML y CSS">
                         </div>
                         <p>Entonces, el HTML es un lenguaje que permite definir la estructura del contenido de una
                             página web a través del uso de elementos envueltos en etiquetas compatibles universalmente
@@ -123,17 +135,17 @@
                     <div class="card">
                         <h1>JavaScript</h1>
                         <div>
-                            <img src="img/javascript.png" alt=Javascript">
+                            <img src="img/d-web/javascript.png" alt=Javascript">
                         </div>
                         <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se
-                            define como orientado a objetos, ​ basado en prototipos, imperativo, débilmente tipado y
+                            define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y
                             dinámico.</p>
                         <button><a href="#">Ver más</a></button>
                     </div>
                     <div class="card">
                         <h1>Python</h1>
                         <div>
-                            <img src="img/python.png" alt="python">
+                            <img src="img/d-web/python.png" alt="python">
                         </div>
                         <p>Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la
                             legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que
@@ -144,7 +156,7 @@
                     <div class="card">
                         <h1>Bootstrap</h1>
                         <div>
-                            <img src="img/bootstrap.png" alt="bootstrap">
+                            <img src="img/d-web/bootstrap.png" alt="bootstrap">
                         </div>
                         <p>Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para
                             diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía,
@@ -156,7 +168,7 @@
                     <div class="card">
                         <h1>TypeScript</h1>
                         <div>
-                            <img src="img/typescript.png" alt="typescript">
+                            <img src="img/d-web/typescript.png" alt="typescript">
                         </div>
                         <p>TypeScript es un lenguaje de programación libre y de código abierto desarrollado y mantenido
                             por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipos estáticos y
@@ -168,7 +180,7 @@
                     <div class="card">
                         <h1>Angular</h1>
                         <div>
-                            <img src="img/angular.png" alt="angular">
+                            <img src="img/d-web/angular.png" alt="angular">
                         </div>
                         <p>Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto,
                             mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola
@@ -178,7 +190,7 @@
                     <div class="card">
                         <h1>Datos Importantes</h1>
                         <div>
-                            <img src="img/datos.png" alt="datos">
+                            <img src="img/d-web/datos.png" alt="datos">
                         </div>
                         <p>Aqui escribo datos o mas bien dicho especificamente archivos de texto que me sirven para
                             hacer mi trabajo mucho mas facil,
@@ -188,7 +200,7 @@
                     <div class="card">
                         <h1>Sass</h1>
                         <div>
-                            <img src="img/sass.png" alt="sass">
+                            <img src="img/d-web/sass.png" alt="sass">
                         </div>
                         <p>Un preprocesador CSS es una herramienta que nos permite generar, de manera automática, hojas
                             de estilo, añadiéndoles características que no tiene CSS, y que son propias de los lenguajes
@@ -199,12 +211,17 @@
                 </div>
 
             </section>
+            <!-- FIN DE SECCION DESARROLLO WEB -->
 
             <!-- AQUI EMPEZAMOS LA SECCION DE LINUX -->
             <section class="linux" id="linux">
-                <h2>Distribuciones Linux!! </h2>
+                <h2><i class="fa fa-fedora"></i>Distribuciones Linux!! </h2>
+                <div class="inicio3">
+                <a href="#header">
+                    <i class="fas fa-home home"></i>
+                </a>
+                 </div>
                 <div class="descripcion-linux">
-
                     <div class="box">
                         <p>Aqui estamos entrando en el mundo de Open Source un mundo que me apasiona</p>
                         <p>Estan son las distribuciones que he probado estables y super recomendadas</p>
@@ -242,61 +259,65 @@
                 <div class="container-linux">
                     <div class="fedora">
                         <a href="https://getfedora.org/es/" target="_blank">
-                            <img src="img/fedora.jpg" alt="fedora-Linux">
+                            <img src="img/linux/fedora.jpg" alt="fedora-Linux">
                         </a>
                     </div>
                     <div class="arch">
                         <a href="https://archlinux.org/" target="_blank">
-                            <img src="img/arch.jpg" alt="Arch-linux">
+                            <img src="img/linux/arch.jpg" alt="Arch-linux">
                         </a>
                     </div>
                     <div class="debian">
                         <a target="_blank" href="https://www.debian.org/index.es.html">
-                            <img src="img/debian.png" alt="Debian-Linux">
+                            <img src="img/linux/debian.png" alt="Debian-Linux">
                         </a>
                     </div>
                     <div class="kali">
                         <a href="https://www.kali.org/" target="_blank">
-                            <img src="img/kali.jpg" alt="Kali-linux">
+                            <img src="img/linux/kali.jpg" alt="Kali-linux">
                         </a>
                     </div>
                     <div class="ubuntu">
                         <a href="https://ubuntu.com/download" target="_blank">
-                            <img src="img/ubuntu.jpg" alt="Ubuntu-linux">
+                            <img src="img/linux/ubuntu.jpg" alt="Ubuntu-linux">
                         </a>
                     </div>
                     <div class="mint">
                         <a href="https://linuxmint.com/" target="_blank">
-                            <img src="img/mint.png" alt="Linux-mint">
+                            <img src="img/linux/mint.png" alt="Linux-mint">
                         </a>
                     </div>
                     <div class="elementary">
                         <a href="https://elementary.io/es/" target="_blank">
-                            <img src="img/elementary.jpeg" alt="Elementary-OS">
+                            <img src="img/linux/elementary.jpeg" alt="Elementary-OS">
                         </a>
                     </div>
                 </div>
             </section>
+            <!-- FIN DE LA SECCION LINUX -->
         </section>
+        <!-- FIN SECCION SOBRE MI -->
 
         <!-- SECCION PIE DE PAGINA -->
-        <footer id="contacto">
+        <footer id="contacto" class="footer">
             <div>
                 <p>Muchas Gracias!!</p>
                 <p>Puedes contactarme a mis Redes Sociales =)</p>
             </div>
             <div class="social-network">
-                <a href="#"><i class="fab fa-facebook"> </a></i>
-                <a href="#"><i class="fab fa-whatsapp"> </a></i>
-                <a href="#"><i class="fab fa-instagram"></a></i>
-                <a href="#"><i class="fab fa-telegram"> </a></i>
-                <a href="#"><i class="fab fa-github">   </a></i>
+                <a href="#"><i class="fab fa-facebook"> </i></a>
+                <a href="#"><i class="fab fa-whatsapp"> </i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"> </i></a>
+                <a href="#"><i class="fab fa-github">   </i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#header"><i class="fas fa-home"></i></a>
 
             </div>
         </footer>
+        <!-- FINDE LA SECCION PIE DE PAGINA -->
     </main>
-</body>
-<script src="script/script.js"></script>
-
+    <!-- FIN SECCION PRINCIPAL -->
+  </body>
+  <script src="script/script.js"></script>
 </html>

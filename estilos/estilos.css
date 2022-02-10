@@ -15,188 +15,260 @@ body {
   background-color: rgba(46, 81, 97, 0.2);
 }
 
-nav {
+.navbar {
   width: 100%;
-  height: 6rem;
-  margin: 1rem auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  height: 5rem;
+  background-color: #2c4d5c;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
   font-size: 1.6rem;
-  color: #fff;
-}
-nav .nav-logo {
-  margin-left: 1.2rem;
-  background-color: #2c4d5c;
-  padding: 1.4rem 1rem;
-  border-radius: 2rem;
-  letter-spacing: 0.2rem;
-  font-size: 2rem;
-}
-nav .nav-log:hover {
-  cursor: pointer;
-}
-nav .nav--navegacion {
-  display: flex;
-  margin-right: 1rem;
-}
-nav .active {
-  background-color: #2c4d5c;
-  border-radius: 2rem;
-  padding: 1.4rem 1rem;
-}
-nav .active a {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-nav ul {
-  display: flex;
   align-items: center;
+  color: #fff;
 }
-nav ul li {
+
+.nav-logo {
+  margin-left: 1rem;
+}
+
+.menu-bar {
+  grid-column: 9/10;
+  justify-self: center;
+  cursor: pointer;
+}
+.menu-bar i {
+  font-size: 1.4rem;
+}
+
+.menu-nav {
   list-style: none;
-  margin-right: 1.2rem;
-}
-nav ul li a {
-  padding: 1.4rem 1rem;
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 2rem;
-}
-nav ul li a:hover {
-  transition: 0.6s;
+  position: absolute;
+  top: 5rem;
   background-color: #2c4d5c;
-  color: #fff;
-  border-radius: 2rem;
+  width: 100vw;
+  transition: all 0.4s;
 }
-
-.container-menu {
-  display: none;
+.menu-nav li {
+  padding: 2rem 0 2rem 3rem;
 }
-
-.menu {
+.menu-nav li:hover {
+  transition: all 0.4s;
+  background-color: #fff;
+}
+.menu-nav li:hover a {
   color: #2c4d5c;
-  font-size: 2.5rem;
-  cursor: pointer;
+  font-size: 1.6rem;
+}
+.menu-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
-main {
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
+.mostrar {
+  margin-left: -120%;
 }
-main .imagen {
+
+@media (min-width: 780px) {
+  .menu-bar {
+    display: none;
+  }
+
+  .menu-nav {
+    width: 100%;
+    display: flex;
+    position: initial;
+    background-color: initial;
+    grid-column: 5/10;
+    justify-content: space-around;
+  }
+  .menu-nav li {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+  }
+
+  .mostrar {
+    margin-left: 0%;
+  }
+}
+.imagen {
   width: 100%;
-  height: 55rem;
+  height: 90vh;
   color: #fff;
-  background-image: url(../img/385439.jpg);
+  background-image: url(../img/img/385439.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-main .imagen div {
+.imagen div {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 55rem;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .imagen div h1 {
+.imagen div h1 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 3.6rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
-main .imagen div h3 {
-  font-size: 1.4rem;
+.imagen div h3 {
+  text-align: center;
+  font-size: 1.2rem;
   font-weight: 300;
 }
-main .imagen div p {
+.imagen div p {
   margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 100;
   text-align: center;
 }
-main .principal {
+
+.principal {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
-  font-size: 1.6rem !important;
+  font-size: 1.4rem;
   font-weight: 300;
+  position: relative;
 }
-main .principal .sobre-mi {
-  margin-top: 0.6rem;
-  border-top: 0.2rem #2c4d5c solid;
+.principal .sobre-mi {
   width: 100%;
-  height: 70rem;
+  height: 100%;
   margin-top: 2rem;
 }
-main .principal .sobre-mi h2 {
+.principal .sobre-mi h2 {
+  color: #2c4d5c;
   text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   border-bottom: 0.2rem #2c4d5c solid;
-  padding-bottom: 1.4rem;
+  border-top: 0.2rem #2c4d5c solid;
+  padding: 1.4rem 0;
+  color: #2c4d5c;
 }
-main .principal .container-yo {
+.principal .sobre-mi h2 .fa-user {
+  margin: 0 1rem;
+}
+.principal .sobre-mi h2 span {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 4rem;
+}
+.principal .sobre-mi h2 span .home {
+  font-size: 4rem;
+  border-radius: 0.8rem;
+  color: #2c4d5c;
+  padding: 1rem;
+}
+.principal .sobre-mi h2 span .home:hover {
+  background-color: #2c4d5c;
+  color: #fff;
+}
+.principal .sobre-mi p {
+  margin-top: 1rem;
+}
+.principal .sobre-mi .container-yo {
   display: flex;
-  justify-content: center;
-  font-size: 1.6rem;
+  margin-top: 2rem;
 }
-main .principal .yo__primera {
-  height: 30rem;
+.principal .sobre-mi .container-yo .yo__segunda {
+  width: 60%;
+  margin-left: 1rem;
+}
+.principal .sobre-mi .container-yo .yo__segunda p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.principal .sobre-mi .container-yo .yo__segunda ul {
+  margin-left: 2rem;
+}
+.principal .sobre-mi .container-yo .yo__segunda .submenu-1 {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.principal .sobre-mi .container-yo .yo__primera {
   width: 40%;
 }
-main .principal .yo__primera img {
-  border-radius: 2rem;
-  width: 80%;
-  height: 55rem;
-  object-fit: center;
-}
-main .principal .yo__segunda {
-  position: relative;
-  width: 60%;
-}
-main .principal .yo__segunda p {
-  margin: 0.4rem 0;
-}
-main .principal .yo__segunda ul {
-  margin: 0.4rem 3rem;
-}
-main .principal .yo__segunda ul ul {
-  margin: 0.4rem 3rem;
+.principal .sobre-mi .container-yo .yo__primera img {
+  width: 100%;
+  border-radius: 0.8rem;
 }
 
+@media (min-width: 780px) {
+  .parrafo-yo {
+    font-size: 1.8rem;
+  }
+
+  .container-yo {
+    font-size: 1.8rem;
+  }
+  .container-yo .yo__primera {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-yo .yo__primera img {
+    width: 60% !important;
+  }
+}
 .desarrollo-web {
   width: 100%;
   height: 100%;
   margin-top: 5rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  position: relative;
 }
 .desarrollo-web h2 {
+  color: rgba(0, 0, 255, 0.699);
   text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   border-bottom: 0.2rem rgba(0, 0, 255, 0.699) solid;
   border-top: 0.2rem rgba(0, 0, 255, 0.699) solid;
   padding: 1.4rem 0;
+}
+.desarrollo-web h2 i {
+  margin-right: 1rem;
 }
 .desarrollo-web p {
   margin-bottom: 1.4rem;
   text-align: center;
 }
+.desarrollo-web .inicio3 {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 4rem;
+}
+.desarrollo-web .inicio3 .home {
+  font-size: 4rem;
+  border-radius: 0.8rem;
+  color: rgba(0, 0, 255, 0.699);
+  padding: 1rem;
+}
+.desarrollo-web .inicio3 .home:hover {
+  background-color: rgba(0, 0, 255, 0.699);
+  color: #fff;
+}
 .desarrollo-web .contain-dw {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
+  grid-template-columns: repeat(auto-fill, 320px);
   justify-content: center;
   place-items: center;
-  gap: 1.6rem;
+  gap: 2rem;
   padding-bottom: 2rem;
+  margin-top: 2rem;
 }
 .desarrollo-web .contain-dw .card {
   border: 2px solid rgba(0, 0, 255, 0.699);
@@ -226,7 +298,7 @@ main .principal .yo__segunda ul ul {
   text-decoration: none;
   color: rgba(0, 0, 255, 0.699);
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .desarrollo-web .contain-dw .card button:hover {
   border: 0.1rem solid rgba(0, 0, 255, 0.699);
@@ -250,150 +322,56 @@ main .principal .yo__segunda ul ul {
   font-size: 1.2rem;
 }
 
-.inicio {
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  bottom: 4rem;
-  right: 0;
+@media (min-width: 760px) {
+  .contain-dw {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px) !important;
+  }
 }
-.inicio .fas {
-  font-size: 5rem;
-  border-radius: 2rem;
-  color: #2c4d5c;
-  padding: 1rem;
-}
-.inicio .fas:hover {
-  background-color: #2c4d5c;
-  color: #fff;
-}
-
-.inicio2 {
-  margin: 1rem 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.inicio2 i {
-  font-size: 5rem;
-  color: #2c4d5c;
-  padding: 1rem;
-  border-radius: 2rem;
-}
-.inicio2 i:hover {
-  background-color: #2c4d5c;
-  color: #fff;
-}
-
-.linux {
-  width: 100%;
-  height: 100vh;
-}
-.linux .container-linux {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 1rem;
-}
-.linux .fedora {
-  width: 100%;
-  grid-column: 1/3;
-  grid-row: 1/4;
-}
-.linux .fedora img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  border-radius: 0.6rem;
-}
-.linux .arch {
-  width: 100%;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-.linux .arch img {
-  width: 100%;
-  border-radius: 0.6rem;
-}
-.linux .debian {
-  width: 100%;
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-.linux .debian img {
-  width: 100%;
-  border-radius: 0.6rem;
-  height: 100%;
-  object-fit: cover;
-}
-.linux .kali {
-  width: 100%;
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-.linux .kali img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.6rem;
-}
-.linux .ubuntu {
-  width: 100%;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-.linux .ubuntu img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.6rem;
-}
-.linux .mint {
-  width: 100%;
-  grid-column: 4/5;
-  grid-row: 3/4;
-}
-.linux .mint img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.6rem;
-}
-.linux .elementary {
-  width: 100%;
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-.linux .elementary img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.6rem;
-}
-
 .linux {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .linux h2 {
+  color: RGB(40, 162, 220);
   text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
   border-bottom: 0.2rem RGB(40, 162, 220) solid;
   border-top: 0.2rem RGB(40, 162, 220) solid;
   padding: 1.4rem 0;
 }
+.linux .inicio3 {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0.4rem;
+  right: 4rem;
+}
+.linux .inicio3 .home {
+  font-size: 4rem;
+  border-radius: 0.8rem;
+  color: RGB(40, 162, 220);
+  padding: 1rem;
+}
+.linux .inicio3 .home:hover {
+  background-color: RGB(40, 162, 220);
+  color: #fff;
+}
 .linux .descripcion-linux {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .linux .descripcion-linux .box {
-  width: 50%;
+  width: 60%;
   border-radius: 0.6rem;
   border: 0.2rem solid RGB(40, 162, 220);
   text-align: justify;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1rem 2rem;
   margin: 0 1.8rem 2rem;
 }
@@ -409,21 +387,24 @@ main .principal .yo__segunda ul ul {
   display: flex;
   justify-content: space-evenly;
 }
-.virtualizadores .v1, .virtualizadores .v2 {
+.virtualizadores .v1,
+.virtualizadores .v2 {
   display: flex;
   margin-top: 1rem;
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 1.2rem;
 }
-.virtualizadores .v1 a, .virtualizadores .v2 a {
+.virtualizadores .v1 a,
+.virtualizadores .v2 a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bolder;
   text-transform: uppercase;
 }
-.virtualizadores .v1-1, .virtualizadores .v2-2 {
+.virtualizadores .v1-1,
+.virtualizadores .v2-2 {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
@@ -434,54 +415,258 @@ main .principal .yo__segunda ul ul {
   border-radius: 1.2rem;
 }
 .virtualizadores .v1 {
-  background-image: url(../img/virtualbox.jpeg);
+  background-image: url(../img/virtual/virtualbox.jpeg);
   background-size: cover;
 }
 .virtualizadores .v2 {
-  background-image: url(../img/vmware.png);
+  background-image: url(../img/virtual/vmware.png);
   background-size: cover;
 }
 
-footer {
+.container-linux {
+  margin-top: 2rem;
   width: 100%;
-  height: 10rem;
-  margin-top: 3rem;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-content: center;
-  justify-items: center;
-  background-color: #2c4d5c;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
 }
-footer p:nth-child(1) {
-  font-size: 3.3rem;
+
+.fedora {
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.fedora img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0.6rem;
+}
+
+.arch {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.arch img {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+.debian {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.debian img {
+  width: 100%;
+  border-radius: 0.6rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kali {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.kali img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.ubuntu {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.ubuntu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.mint {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.mint img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.elementary {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.elementary img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+@media (min-width: 760px) {
+  .descripcion-linux {
+    flex-direction: row !important;
+  }
+  .descripcion-linux .box {
+    width: 40% !important;
+  }
+
+  .linux {
+    width: 100%;
+    height: 100%;
+  }
+  .linux .container-linux {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .linux .fedora {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  .linux .fedora img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 0.6rem;
+  }
+  .linux .arch {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .linux .arch img {
+    width: 100%;
+    border-radius: 0.6rem;
+  }
+  .linux .debian {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .linux .debian img {
+    width: 100%;
+    border-radius: 0.6rem;
+    height: 100%;
+    object-fit: cover;
+  }
+  .linux .kali {
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .linux .kali img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+  }
+  .linux .ubuntu {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .linux .ubuntu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+  }
+  .linux .mint {
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .linux .mint img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+  }
+  .linux .elementary {
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  .linux .elementary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 13rem;
+  background-color: #2c4d5c;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.footer div {
+  margin: 1rem 0;
+}
+.footer div p:nth-child(1) {
+  font-size: 3.1rem;
   color: #fff;
   margin-bottom: 0.4rem;
+  text-align: center;
 }
-footer p:nth-child(2) {
+.footer div p:nth-child(2) {
   font-size: 1rem;
   color: #fff;
   text-align: center;
 }
-footer .social-network {
+.footer .social-network {
   display: flex;
   width: 80%;
   justify-content: space-evenly;
 }
-footer .social-network a {
+.footer .social-network a {
   text-decoration: none;
   display: block;
   color: #fff;
   font-size: 4rem;
 }
-footer .social-network a:hover {
+.footer .social-network a:hover {
   color: #2c4d5c;
   transition: 0.5s;
   font-size: 4.4rem;
+  transition: all 0.6s;
 }
-footer .social-network a:hover i {
+.footer .social-network a:hover i {
   border-radius: 1.2rem;
   background-color: #fff;
   padding: 0.4rem;
+}
+
+@media (min-width: 780px) {
+  footer {
+    width: 100%;
+    height: 10rem !important;
+    margin-top: 3rem;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-items: center;
+    background-color: #2c4d5c;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
