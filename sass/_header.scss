@@ -18,6 +18,7 @@ body{
 .menu-bar{
   grid-column: 9/10;
   justify-self: center;
+  margin-right: 1rem;
   cursor: pointer;
   i{
     font-size: $text-md

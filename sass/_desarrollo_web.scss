@@ -6,7 +6,7 @@
     position: relative;
     
     h2{
-        @include subTitutlos($primario);
+        @include subTitutlos($primario,1.6rem);
         i{
             margin-right: 1rem;
         }
@@ -16,7 +16,7 @@
         text-align: center;
     }
     .inicio3{
-        @include botonInicio($primario,.4rem,4rem);
+        @include botonInicio($primario,.4rem,1rem,2rem);
     }
 
     .contain-dw{
@@ -69,5 +69,13 @@
             display: grid;
             grid-template-columns: repeat(auto-fill,350px) !important;
 
+        }
+        .desarrollo-web{
+            h2{
+                @include subTitutlos($primario,4rem);
+            }
+            .inicio3{
+                @include botonInicio($primario,.8rem,3rem,4rem);
+            }
         }
     }

@@ -10,13 +10,12 @@
     height: 100%;
     margin-top: 2rem;
     h2 {
-      @include subTitutlos($secundario);
-      color: $secundario;
+      @include subTitutlos($secundario,1.6rem);
       .fa-user{
         margin: 0 1rem
       }
       span{
-        @include botonInicio($secundario,.4rem,4rem);
+        @include botonInicio($secundario,.4rem,1rem,2rem);
       }
     }
     p{
@@ -69,4 +68,16 @@
 }
   }
 
-  
+@media (min-width:760px) {
+  .principal{
+    .sobre-mi{
+      h2{
+        @include subTitutlos($secundario,4rem);
+        span{
+          @include botonInicio($secundario,.8rem,3rem,4rem);
+        }
+      }
+
+    }
+  }
+}
