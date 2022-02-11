@@ -47,7 +47,7 @@
   width: 4rem;
   height: 4rem;
   position: absolute;
-  top: $top;
+  top: $top !important;
   right: $right;
   .home {
     font-size: $text;

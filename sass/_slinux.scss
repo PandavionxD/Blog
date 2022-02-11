@@ -5,8 +5,8 @@
   h2 {
     @include subTitutlos($celeste,1.6rem);
   }
-  .inicio3 {
-    @include botonInicio($celeste,.4rem,1rem,2rem);
+  .inicio4 {
+    @include botonInicio($celeste,.8rem,1rem,2rem);
   }
   .descripcion-linux {
     display: flex;
@@ -176,8 +176,8 @@
         h2{
             @include subTitutlos($celeste,3rem);
         }
-        .inicio3 {
-            @include botonInicio($celeste,.8rem,3rem,4rem);
+        .inicio4 {
+            @include botonInicio($celeste,.9rem,3rem,4rem);
           }
 
         width: 100%;

@@ -16,6 +16,8 @@
     />
     <!-- Iconos de Font awesome-->
     <script src="https://kit.fontawesome.com/1aba9b6160.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Website!</title>
   </head>
 
@@ -66,7 +68,10 @@
                         estudiante de SENATI, de la carrera de informatica y me apasiona la tecnología. </p>
                     <div class="container-yo">
 
-                        <div class="yo__segunda">
+                        <div class="yo__segunda"
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                             <p>Un poco de mí</p>
                             <ul>
                             <li>Me encanta las tecnologías.</li>
@@ -101,7 +106,10 @@
                             </ul>
                         </ul>
                     </div>
-                    <div class="yo__primera">
+                    <div class="yo__primera" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="1000"
+                    data-aos-duration="1000">
                         <img src="img/img/polar.jpg" alt="Polar">
                     </div>
                 </div>
@@ -216,7 +224,7 @@
             <!-- AQUI EMPEZAMOS LA SECCION DE LINUX -->
             <section class="linux" id="linux">
                 <h2>Distribuciones Linux!! </h2>
-                <div class="inicio3">
+                <div class="inicio4">
                 <a href="#header">
                     <i class="fas fa-home home"></i>
                 </a>
@@ -319,5 +327,6 @@
     </main>
     <!-- FIN SECCION PRINCIPAL -->
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script/script.js"></script>
 </html>

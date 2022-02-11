@@ -15,7 +15,7 @@
         margin: 0 1rem
       }
       span{
-        @include botonInicio($secundario,.4rem,1rem,2rem);
+        @include botonInicio($secundario,1rem,1rem,2rem);
       }
     }
     p{

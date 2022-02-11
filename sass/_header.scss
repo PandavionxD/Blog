@@ -21,7 +21,7 @@ body{
   margin-right: 1rem;
   cursor: pointer;
   i{
-    font-size: $text-md
+    font-size: $text-xlg;
   }
 }
 .menu-nav{
@@ -29,7 +29,7 @@ body{
   position: absolute;
   top: 5rem;
   background-color: $secundario;
-  width: 100vw;
+  width: 100%;
   transition: all .4s;
   li{
     padding: 2rem 0 2rem 3rem;

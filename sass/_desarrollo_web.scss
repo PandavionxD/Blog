@@ -16,7 +16,7 @@
         text-align: center;
     }
     .inicio3{
-        @include botonInicio($primario,.4rem,1rem,2rem);
+        @include botonInicio($primario,1rem,1rem,2rem);
     }
 
     .contain-dw{

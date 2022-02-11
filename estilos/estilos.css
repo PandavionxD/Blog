@@ -38,7 +38,7 @@ body {
   cursor: pointer;
 }
 .menu-bar i {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .menu-nav {
@@ -46,7 +46,7 @@ body {
   position: absolute;
   top: 5rem;
   background-color: #2c4d5c;
-  width: 100vw;
+  width: 100%;
   transition: all 0.4s;
 }
 .menu-nav li {
@@ -164,7 +164,7 @@ body {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  top: 0.4rem;
+  top: 1rem !important;
   right: 1rem;
 }
 .principal .sobre-mi h2 span .home {
@@ -240,7 +240,7 @@ body {
     width: 4rem;
     height: 4rem;
     position: absolute;
-    top: 0.8rem;
+    top: 0.8rem !important;
     right: 3rem;
   }
   .principal .sobre-mi h2 span .home {
@@ -282,7 +282,7 @@ body {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  top: 0.4rem;
+  top: 1rem !important;
   right: 1rem;
 }
 .desarrollo-web .inicio3 .home {
@@ -378,7 +378,7 @@ body {
     width: 4rem;
     height: 4rem;
     position: absolute;
-    top: 0.8rem;
+    top: 0.8rem !important;
     right: 3rem;
   }
   .desarrollo-web .inicio3 .home {
@@ -407,20 +407,20 @@ body {
   border-top: 0.2rem RGB(40, 162, 220) solid;
   padding: 1.8rem 0;
 }
-.linux .inicio3 {
+.linux .inicio4 {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  top: 0.4rem;
+  top: 0.8rem !important;
   right: 1rem;
 }
-.linux .inicio3 .home {
+.linux .inicio4 .home {
   font-size: 2rem;
   border-radius: 0.8rem;
   color: RGB(40, 162, 220);
   padding: 1rem;
 }
-.linux .inicio3 .home:hover {
+.linux .inicio4 .home:hover {
   background-color: RGB(40, 162, 220);
   color: #fff;
 }
@@ -606,20 +606,20 @@ body {
     border-top: 0.2rem RGB(40, 162, 220) solid;
     padding: 1.8rem 0;
   }
-  .linux .inicio3 {
+  .linux .inicio4 {
     width: 4rem;
     height: 4rem;
     position: absolute;
-    top: 0.8rem;
+    top: 0.9rem !important;
     right: 3rem;
   }
-  .linux .inicio3 .home {
+  .linux .inicio4 .home {
     font-size: 4rem;
     border-radius: 0.8rem;
     color: RGB(40, 162, 220);
     padding: 1rem;
   }
-  .linux .inicio3 .home:hover {
+  .linux .inicio4 .home:hover {
     background-color: RGB(40, 162, 220);
     color: #fff;
   }

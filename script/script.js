@@ -5,6 +5,8 @@ menu_bar.addEventListener('click',()=>{
     menu_nav.classList.toggle('mostrar')
 })
 
+AOS.init();
+
 
 let advertencia = 'Algunos enlaces aun faltan terminar pero el responsivo ya quedo, fue cansado pero ahi queda creo!!'
 alert(advertencia)
