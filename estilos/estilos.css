@@ -155,7 +155,7 @@ body {
   margin: 3rem 0;
   border-bottom: 0.2rem #2c4d5c solid;
   border-top: 0.2rem #2c4d5c solid;
-  padding: 1.4rem 0;
+  padding: 1.8rem 0;
 }
 .principal .sobre-mi h2 .fa-user {
   margin: 0 1rem;
@@ -229,12 +229,12 @@ body {
   .principal .sobre-mi h2 {
     color: #2c4d5c;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin: 3rem 0;
     border-bottom: 0.2rem #2c4d5c solid;
     border-top: 0.2rem #2c4d5c solid;
-    padding: 1.4rem 0;
+    padding: 1.8rem 0;
   }
   .principal .sobre-mi h2 span {
     width: 4rem;
@@ -269,7 +269,7 @@ body {
   margin: 3rem 0;
   border-bottom: 0.2rem rgba(0, 0, 255, 0.699) solid;
   border-top: 0.2rem rgba(0, 0, 255, 0.699) solid;
-  padding: 1.4rem 0;
+  padding: 1.8rem 0;
 }
 .desarrollo-web h2 i {
   margin-right: 1rem;
@@ -338,10 +338,11 @@ body {
   border: 0.1rem solid rgba(0, 0, 255, 0.699);
   background-color: rgba(0, 0, 255, 0.699);
   transition: 0.6s;
-  font-weight: 500;
 }
 .desarrollo-web .contain-dw .card button:hover a {
+  font-weight: 700;
   color: #fff;
+  font-size: 1.6rem;
 }
 .desarrollo-web .contain-dw .card div {
   width: 10rem;
@@ -366,12 +367,12 @@ body {
   .desarrollo-web h2 {
     color: rgba(0, 0, 255, 0.699);
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin: 3rem 0;
     border-bottom: 0.2rem rgba(0, 0, 255, 0.699) solid;
     border-top: 0.2rem rgba(0, 0, 255, 0.699) solid;
-    padding: 1.4rem 0;
+    padding: 1.8rem 0;
   }
   .desarrollo-web .inicio3 {
     width: 4rem;
@@ -404,7 +405,7 @@ body {
   margin: 3rem 0;
   border-bottom: 0.2rem RGB(40, 162, 220) solid;
   border-top: 0.2rem RGB(40, 162, 220) solid;
-  padding: 1.4rem 0;
+  padding: 1.8rem 0;
 }
 .linux .inicio3 {
   width: 4rem;
@@ -598,12 +599,12 @@ body {
   .linux h2 {
     color: RGB(40, 162, 220);
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     margin: 3rem 0;
     border-bottom: 0.2rem RGB(40, 162, 220) solid;
     border-top: 0.2rem RGB(40, 162, 220) solid;
-    padding: 1.4rem 0;
+    padding: 1.8rem 0;
   }
   .linux .inicio3 {
     width: 4rem;

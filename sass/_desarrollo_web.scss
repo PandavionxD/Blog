@@ -72,7 +72,7 @@
         }
         .desarrollo-web{
             h2{
-                @include subTitutlos($primario,4rem);
+                @include subTitutlos($primario,3rem);
             }
             .inicio3{
                 @include botonInicio($primario,.8rem,3rem,4rem);

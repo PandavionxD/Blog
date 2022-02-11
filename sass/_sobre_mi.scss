@@ -72,7 +72,7 @@
   .principal{
     .sobre-mi{
       h2{
-        @include subTitutlos($secundario,4rem);
+        @include subTitutlos($secundario,3rem);
         span{
           @include botonInicio($secundario,.8rem,3rem,4rem);
         }

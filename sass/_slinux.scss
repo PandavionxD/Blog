@@ -174,7 +174,7 @@
     }
     .linux{
         h2{
-            @include subTitutlos($celeste,4rem);
+            @include subTitutlos($celeste,3rem);
         }
         .inicio3 {
             @include botonInicio($celeste,.8rem,3rem,4rem);

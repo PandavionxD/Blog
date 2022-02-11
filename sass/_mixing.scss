@@ -18,9 +18,10 @@
   border: 0.1rem solid $primario;
   background-color: $primario;
   transition: 0.6s;
-  font-weight: 500;
   a {
+    font-weight: 700;
     color: $white;
+    font-size: $text-lg;
   }
 }
 
@@ -32,7 +33,7 @@
   margin: 3rem 0;
   border-bottom: 0.2rem $color-borde solid;
   border-top: 0.2rem $color-borde solid;
-  padding: 1.4rem 0;
+  padding: 1.8rem 0;
 }
 
 @mixin box($color) {
